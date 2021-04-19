@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Azure_Services__az_204_</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Azure redic app\**" />
+    <EmbeddedResource Remove="Azure redic app\**" />
+    <None Remove="Azure redic app\**" />
+  </ItemGroup>
+
+</Project>

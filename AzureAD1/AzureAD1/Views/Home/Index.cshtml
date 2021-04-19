@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <div class="jumbotron">
+        @foreach (var item in ViewBag.Keys)
+        {
+            <br />
+            @item
+        }
+        <br />
+        X-MS-CLIENT-PRINCIPAL-NAME is
+        @foreach (string item in ViewBag.Name)
+        {
+            @item
+        }
+        <br />
+        X-MS-CLIENT-PRINCIPAL-ID is
+        @foreach (string item in ViewBag.id)
+        {
+            @item
+        }
+        <br />
+        X-MS-TOKEN-AAD-ACCESS-TOKEN is
+        @foreach (string item in ViewBag.token)
+        {
+            @item
+        }
+    </div>
